@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 1.5rem;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar ul li:hover{
+    color: var(--secondary-color);
+}
+.current-page{
+    color: var(--primary-color) !important;
+}
+.navbar-logo{
+    height: 30px;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.navbar-logo:hover{
+    transform: translateY(-5px);
+    filter: brightness(0);
+}
