@@ -28,6 +28,8 @@ setTimeout(()=>{
 function pad(){
     var plt = document.getElementById('plt');
     plt.classList.toggle('movehaha')
+}
+function padd(){
     var docc = document.getElementById('game-start-btn');
     docc.innerHTML='End game';
 }
@@ -36,8 +38,7 @@ function won(){
     var plt = document.getElementById('plt');
     span.innerHTML="Uw wow, so fast! It's your cookie now.";
     plt.classList.toggle('stop-move');
-}
-function cookieNumber() {
+    var count = 0;
     count = count + 1;
     document.getElementById('cookies-numb').innerHTML = count;
 }

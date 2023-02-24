@@ -132,7 +132,7 @@
 .asasa{
     color: white;
     font-size: 22px;
-    height: 30px;
+    height: 50px;
     align-items: center;
 }
 #cookies-numb{
@@ -142,8 +142,31 @@
     margin-left: 0.5rem;
 }
 .count-cookies{
+    position: fixed !important;
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
     display: flex;
+    justify-content: center;
     align-items: center;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+}
+.count-cookies span{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: blueviolet;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
 }
 html{
     overflow-x: hidden;

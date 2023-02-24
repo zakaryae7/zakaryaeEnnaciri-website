@@ -5,4 +5,4 @@ var loadingCompo = document.getElementById('loading');
 setTimeout(()=>{
     var loadingCompo = document.getElementById('loading');
     loadingCompo.style.visibility='hidden';
-},1500);
+},500);
