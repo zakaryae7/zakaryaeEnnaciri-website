@@ -209,11 +209,7 @@ op{
 }
 
 /* context starts */
-.context{
-    align-items: center;
-    color: #9b5624 !important;
-}
-.background{
+.index-background{
     opacity: 5%;
     transform: rotate(90deg);
     height: 400px;
@@ -221,9 +217,6 @@ op{
     z-index: -1;
     top: 20%;
     left: -20rem;
-}
-#haie{
-    animation: typing 2s steps(40, end), blink-caret .75s step-end ;
 }
 .index-start{
     width: 6rem;
@@ -250,5 +243,22 @@ op{
 
 /* INDEX RESPOSIVITY STARTS */
 @media (max-width:768px) {
-    
+    .index-background{
+        opacity: 5%;
+        transform: rotate(-90deg);
+        height: 300px;
+        position: absolute;
+        z-index: -1;
+        top: 20%;
+        left: -17rem;
+    }
+    .index-logo {
+        transition: 0.3s;
+        cursor: pointer;
+        width: 100px;
+        display: block;
+        margin: 5rem auto;
+        animation: fadeLeft 1s  ;
+        user-select: none;
+    }
 }
