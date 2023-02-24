@@ -37,8 +37,7 @@ function won(){
     span.innerHTML="Uw wow, so fast! It's your cookie now.";
     plt.classList.toggle('stop-move');
 }
-function cookieNumber(){
-    var cookieNumb = 1;
-    var y = document.getElementById('cookies-numb')
-    y.innerHTML= cookieNumb;
+function cookieNumber() {
+    count = count + 1;
+    document.getElementById('cookies-numb').innerHTML = count;
 }
