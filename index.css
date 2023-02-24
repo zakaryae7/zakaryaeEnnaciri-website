@@ -247,3 +247,8 @@ op{
 .index-fun{
     margin-top: 1rem;
 }
+
+/* INDEX RESPOSIVITY STARTS */
+@media (max-width:768px) {
+    
+}
