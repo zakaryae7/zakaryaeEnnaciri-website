@@ -77,22 +77,71 @@
         z-index: 1000 !important;
     }
 }
+/* My first game haha */
+.my-game{
+    margin-top: 4rem;
+    border: 1px solid black;
+    box-shadow: 6px 10px 40px black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 3rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 5rem;
+}
 .movehaha{
+    display: block !important;
     animation: randomMovement;
     animation-duration: 1s;
     animation-timing-function: ease;
     animation-iteration-count: infinite;
+    margin-bottom: 15rem;
 }
 .stop-move{
     transform: none !important;
     animation: none !important;
 }
+#plt{
+    cursor: pointer;
+    display: none;
+}
 #plt img{
     height: 70px;
-    cursor: pointer;
+    margin-top: 2rem;
+    text-align: left;
 }
 .fll{
     color: white;
+    text-align: center;
     display: inherit;
     font-size: 22px;
+}
+#game-start-btn{
+    margin-top: 1rem;
+    color: white;
+    background-color: blueviolet;
+    width: max-content;
+    padding: 10px 2rem;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+}
+.asasa{
+    color: white;
+    font-size: 22px;
+    height: 30px;
+    align-items: center;
+}
+#cookies-numb{
+    color: white;
+    line-height: 22px;
+    font-size: 22px;
+    margin-left: 0.5rem;
+}
+.count-cookies{
+    display: flex;
+    align-items: center;
 }

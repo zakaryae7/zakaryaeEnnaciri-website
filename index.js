@@ -28,10 +28,15 @@ setTimeout(()=>{
 function pad(){
     var plt = document.getElementById('plt');
     plt.classList.toggle('movehaha')
+    var docc = document.getElementById('game-start-btn');
+    docc.innerHTML='End game';
 }
 function won(){
     var span = document.getElementById('uwon')
     var plt = document.getElementById('plt');
     span.innerHTML="Uw wow, so fast! It's your cookie now.";
     plt.classList.toggle('stop-move');
+}
+function cookieNumber(){
+    
 }
