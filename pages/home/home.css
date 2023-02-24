@@ -77,3 +77,22 @@
         z-index: 1000 !important;
     }
 }
+.movehaha{
+    animation: randomMovement;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+.stop-move{
+    transform: none !important;
+    animation: none !important;
+}
+#plt img{
+    height: 70px;
+    cursor: pointer;
+}
+.fll{
+    color: white;
+    display: inherit;
+    font-size: 22px;
+}

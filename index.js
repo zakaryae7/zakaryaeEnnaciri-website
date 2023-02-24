@@ -22,4 +22,16 @@ function jusy(){
 const pop = document.getElementById('pop-up');
 setTimeout(()=>{
     pop.style.display = 'block';
-},4000);
+},7000);
+
+// My first game ever 
+function pad(){
+    var plt = document.getElementById('plt');
+    plt.classList.toggle('movehaha')
+}
+function won(){
+    var span = document.getElementById('uwon')
+    var plt = document.getElementById('plt');
+    span.innerHTML="Uw wow, so fast! It's your cookie now.";
+    plt.classList.toggle('stop-move');
+}
