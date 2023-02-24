@@ -29,8 +29,6 @@
     from { width: 0; visibility: hidden; }
     to { width: 100%;visibility: visible ;}
 }
-
-
 *{
     margin: 0;
     padding: 0;
@@ -39,13 +37,73 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #fbfbfb;
-    user-select: none;
     background-image: url(https://www.creativefabrica.com/wp-content/uploads/2020/06/04/Dark-Purple-Gradient-Background-Graphics-4278236-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow-y: hidden;
 }
+/* NavBar start */
+.navbar{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline;
+    margin-right: 1.5rem;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar ul li:hover{
+    color: var(--secondary-color);
+}
+.current-page{
+    color: var(--primary-color) !important;
+}
+.navbar-logo{
+    height: 30px;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.navbar-logo:hover{
+    transform: translateY(-5px);
+    filter: brightness(0);
+}
+.menu-icon{
+    width: 37px;
+    padding-top: 5px;
+    display: none;
+}
+@media (max-width: 768px) {
+    .menu-icon{
+    display: block;
+    }
+    .navbar ul li{
+        display: none !important;
+        list-style-type: none;
+        display: inline;
+        margin-right: 1.5rem;
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+    .navbar{
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+}
+
+/* Containers starts */
 .index-container{
     color: white;
     font-family: Consolas,monaco,monospace; 
@@ -59,6 +117,7 @@ body{
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    user-select: none;
 }
 
 #index-title{   
@@ -69,6 +128,7 @@ body{
     line-height: 13px;
     margin-bottom: 50px;
     animation: typing 2s steps(40, end), blink-caret .75s step-end  ;
+    user-select: none;
 }
 #index-welcome{   
     font-size: 14px;
@@ -78,7 +138,8 @@ body{
     line-height: 13px;
     margin-bottom: 50px;
     animation: typing 2s steps(40, end), blink-caret .75s step-end ;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
+    user-select: none;
     visibility: hidden;
 }
 .index-logo {
@@ -88,6 +149,7 @@ body{
     display: block;
     margin: 5rem auto;
     animation: fadeLeft 1s  ;
+    user-select: none;
 }
 .index-logo:hover{
     transform: translateY(-6px);
@@ -104,11 +166,13 @@ body{
     transition: 0.3s;
     font-family: Consolas,monaco,monospace; 
     background-color: transparent;
-    color: white;
+    color: white;    
+    user-select: none;
 }
 .index-container input:focus{
     outline: none;
-    border: none;
+    border: none;    
+    user-select: none;
 }
 .index-submit{
     color: white;
@@ -119,6 +183,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    user-select: none;
 }
 .index-submit:hover{
     background-color: white;
@@ -142,14 +207,8 @@ op{
     margin-left: 10px;
     animation: show 0.9s 0s infinite ;
 }
-@media (max-width='900px') {
-    .index-logo {
-        transition: 0.3s;
-        cursor: pointer;
-        height: 20px;
-        margin: 2rem ;
-    }
-}
+
+/* context starts */
 .context{
     align-items: center;
     color: #9b5624 !important;

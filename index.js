@@ -1,3 +1,4 @@
+// INDEX NAME AND PAGE STARTING
 function clicked(){
     var name = document.getElementById('name').value;
     var repo = document.getElementById('bla');
@@ -8,13 +9,17 @@ function clicked(){
     repo.innerHTML = display;
     document.getElementById('haie').innerHTML = welcome + ' ' + name;
 }
-// NAVBAR COMPONENT START
-var navbar = `
-<img src="/assets/logos/whitelogo.png" class="navbar-logo">
-<ul>
-    <a href='/pages/home/home.html'><li class="current-page">Home</li>
-    <a href='/pages/skills/skills.html'><li>Skills</li>
-    <a href='/pages/links/'><li>Links</li>
-    <a href='/pages/aboutme/about.html'><li>About me</li>
-</ul>`;
-document.getElementById('navbar').innerHTML = navbar;
+// Index animation Time Out fixed
+setTimeout(()=>{
+    var indexWelcome = document.getElementById('index-welcome');
+    indexWelcome.style.visibility='visible';
+},2100);
+
+// HOME POP UP STARTING
+function jusy(){
+    document.getElementById('pop-up').style.display='none';
+}
+const pop = document.getElementById('pop-up');
+setTimeout(()=>{
+    pop.style.display = 'block';
+},4000);

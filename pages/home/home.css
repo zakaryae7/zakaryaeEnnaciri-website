@@ -1,32 +1,79 @@
-.navbar{
-    display: flex;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    padding: 1.5rem;
+#pop-up{
+    width: 50%;
+    background-color: rgb(194, 193, 193);
+    padding: 1rem; 
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1000px 10000px rgb(0, 0, 0, 0.7);
+    display: none;
+    z-index: 1000 !important;
 }
-.navbar ul li{
-    list-style-type: none;
-    display: inline;
-    margin-right: 1.5rem;
-    font-size: 15px;
+#pop-up button{
+    border: none;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 1px 3px 5px black;
+    padding: 10px 0rem;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 5px;
     cursor: pointer;
-    font-weight: 500;
     transition: 0.3s;
 }
-.navbar ul li:hover{
-    color: var(--secondary-color);
+#pop-up button:hover{
+    transform: translateY(-4px);
 }
-.current-page{
-    color: var(--primary-color) !important;
+#pop-up h1{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
-.navbar-logo{
-    height: 30px;
-    margin-right: 2rem;
+#pop-up img{
+    display: block;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
     cursor: pointer;
-    transition: 0.2s;
 }
-.navbar-logo:hover{
-    transform: translateY(-5px);
+#pop-up img:hover{
     filter: brightness(0);
+    transform: scale(1.1);
+}
+.close{
+    top: -10px;
+    right: -10px;
+    position: absolute;
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+    padding-top: 9px;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 10px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    #pop-up{
+        width: 80%;
+        background-color: rgb(194, 193, 193);
+        padding: 1rem; 
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 1000px 10000px rgb(0, 0, 0, 0.7);
+        display: none;
+        z-index: 1000 !important;
+    }
 }
