@@ -29,6 +29,15 @@
     from { width: 0; visibility: hidden; }
     to { width: 100%;visibility: visible ;}
 }
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -261,4 +270,14 @@ op{
         animation: fadeLeft 1s  ;
         user-select: none;
     }
+}
+#loading-compo{
+    position: fixed;
+    top: 40%;
+    left: 46%;
+    height: 100px;
+    z-index: 100000;
+    animation: rotation 2s infinite linear;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 0px 111110px rgb(0, 0, 0, 0.8);
 }
