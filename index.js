@@ -13,7 +13,7 @@ function clicked(){
 setTimeout(()=>{
     var indexWelcome = document.getElementById('index-welcome');
     indexWelcome.style.visibility='visible';
-},5000);
+},2100);
 
 // HOME POP UP STARTING
 function jusy(){
