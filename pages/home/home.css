@@ -148,3 +148,18 @@
 html{
     overflow-x: hidden;
 }
+@media (max-width: 768px) {
+    .my-game{
+        margin-top:1rem;
+        width: 90%;
+    }
+    .count-cookies{
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    .fll{
+        color: white;
+        text-align: center;
+        font-size: 22px;
+    }
+}
