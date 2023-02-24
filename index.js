@@ -27,11 +27,13 @@ setTimeout(()=>{
 // My first game ever 
 function pad(){
     var plt = document.getElementById('plt');
-    plt.classList.toggle('movehaha')
+    plt.classList.toggle('movehaha');
+    
 }
 function padd(){
     var docc = document.getElementById('game-start-btn');
     docc.innerHTML='End game';
+    docc.classList.toggle('nown');
 }
 function won(){
     var span = document.getElementById('uwon')

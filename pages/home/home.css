@@ -100,6 +100,7 @@
 .stop-move{
     transform: none !important;
     animation: none !important;
+    display: none !important;
 }
 #plt{
     cursor: pointer;
@@ -185,4 +186,13 @@ html{
         text-align: center;
         font-size: 22px;
     }
+}
+.nown{
+    display: none;
+}
+.shown{
+    display: block;
+}
+#uwon{
+    margin-top: 2rem;
 }
