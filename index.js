@@ -38,5 +38,7 @@ function won(){
     plt.classList.toggle('stop-move');
 }
 function cookieNumber(){
-    
+    var cookieNumb = 1;
+    var y = document.getElementById('cookies-numb')
+    y.innerHTML= cookieNumb;
 }

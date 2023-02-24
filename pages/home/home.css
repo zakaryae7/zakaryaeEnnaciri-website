@@ -145,3 +145,6 @@
     display: flex;
     align-items: center;
 }
+html{
+    overflow-x: hidden;
+}
