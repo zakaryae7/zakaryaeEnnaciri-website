@@ -44,3 +44,8 @@ function won(){
     count = count + 1;
     document.getElementById('cookies-numb').innerHTML = count;
 }
+function azer(){
+    var numb = 0;
+    var numb = numb + 1;
+    document.getElementById('test').innerHTML = numb;
+}
