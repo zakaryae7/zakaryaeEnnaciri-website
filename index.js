@@ -6,7 +6,14 @@ function clicked(){
     var display = `<span id="haie"></span>
     <p class='index-fun'>Please have fun!</p>
     <a href='/pages/home/home.html'><button class='index-start'>Less goo</button></a>`;
-    repo.innerHTML = display;
+    var falseName = document.getElementById('false-name');
+    var badWords = ['9lawi']
+    if(name == badWords){
+        falseName.style.display='block';
+    }
+    else{
+        repo.innerHTML = display;
+}
     document.getElementById('haie').innerHTML = welcome + ' ' + name;
 }
 // Index animation Time Out fixed
