@@ -1,3 +1,9 @@
+body{
+    background: linear-gradient(45deg, rgba(100,58,113,1) 0%, rgb(49, 14, 49) 100%) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 100vmax;
+}
 #pop-up{
     width: 50%;
     background-color: rgb(194, 193, 193);

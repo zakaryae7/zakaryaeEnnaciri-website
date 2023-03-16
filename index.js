@@ -7,7 +7,7 @@ function clicked(){
     <p class='index-fun'>Please have fun!</p>
     <a href='/pages/home/home.html'><button class='index-start'>Less goo</button></a>`;
     var falseName = document.getElementById('false-name');
-    var badWords = ['9lawi']
+    var badWords = ["zeb", "zebi", "zab", "terma"]
     if(name == badWords){
         falseName.style.display='block';
     }
