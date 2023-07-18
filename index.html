@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS ChampionShip 1st Edition</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body onload="loadinga(),signed()">
+    <div id="ezz"><img src="/src/images/redzoneLogo.png" alt=""></div>
+    <nav>
+        <img src="/src/images/redzoneLogo.png" alt="redzone logo" class="redzonelogo">
+        <img src="/src/images/ff.png" alt="freefire logo">
+    </nav>
+    <main>
+        <div class="signUp">
+            <h1>Creat account :</h1>
+            <form 
+                action="https://formspree.io/f/mqkvaaow"
+                method="POST">
+                <input name="name" type="text" required placeholder="Name (real name)" id="name">
+                <input name="username" type="text" required placeholder="UserName (game name)" id="username">
+                <input name="password" type="password" required placeholder="Password" id="password">
+                <input name="phone" type="text" required placeholder="Phone Number (Whatsapp)" id="phonenumber">
+                <p class="infos">
+                    Your information are used in organising the competition<br> 
+                    and no one else can access to these information,<br>
+                    You will be adedd to Whatsapp groupe automatically.
+                </p>
+                <input type="submit" onclick="local()" >
+            </form>
+        </div>
+        <img class="png" src="/src/images/loog.png">
+    </main>
+    <p class="made">Made with love by ezvkaryae.</p>
+    <script src="/main.js"></script>
+</body>
+</html>
